@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/jumbo-logo-new.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Pim Pam Pet</title>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="card-container">
+        <div id="question-container">
+          <div id="card-color"></div>
+        </div>
+        <div id="question-back">
+          <p id="question-text"></p>
+        </div>
+      </div>
+      <div id="letter-container">
+        <img
+          id="turn"
+          src="./img/draaischijf_top-removebg-preview.png"
+          alt="draaischijf"
+        />
+        <button id="letter-btn"></button>
+      </div>
+      <div id="players-container">
+        <div id="player1-container" class="player-container">
+          <div id="player1-name" class="player-name">Speler 1</div>
+          <div class="color-score-container">
+            <div class="color-container">
+              <button id="player1-yellow" class="color-btn yellow"></button>
+              <button id="player1-blue" class="color-btn blue"></button>
+              <button id="player1-red" class="color-btn red"></button>
+            </div>
+            <div id="player1-score" class="score">0</div>
+            <!-- <img
+              id="joker1"
+              class="joker"
+              src="./img/output-onlinepngtools.png"
+              alt=""
+            /> -->
+          </div>
+        </div>
+        <div id="player2-container" class="player-container">
+          <div id="player2-name" class="player-name">Speler 2</div>
+          <div class="color-score-container">
+            <div class="color-container">
+              <button id="player2-yellow" class="color-btn yellow"></button>
+              <button id="player2-blue" class="color-btn blue"></button>
+              <button id="player2-red" class="color-btn red"></button>
+            </div>
+            <div id="player2-score" class="score">0</div>
+            <!-- <img
+              id="joker2"
+              class="joker"
+              src="./img/output-onlinepngtools.png"
+              alt=""
+            /> -->
+          </div>
+        </div>
+        <div id="player3-container" class="player-container">
+          <div id="player3-name" class="player-name">Speler 3</div>
+          <div class="color-score-container">
+            <div class="color-container">
+              <button id="player3-yellow" class="color-btn yellow"></button>
+              <button id="player3-blue" class="color-btn blue"></button>
+              <button id="player3-red" class="color-btn red"></button>
+            </div>
+            <div id="player3-score" class="score">0</div>
+            <!-- <img
+              id="joker3"
+              class="joker"
+              src="./img/output-onlinepngtools.png"
+              alt=""
+            /> -->
+          </div>
+        </div>
+        <!-- <div id="player4-container" class="player-container">
+          <div id="player4-name" class="player-name">PLAYER 4</div>
+          <div class="color-container">
+            <button id="player4-yellow" class="color-btn yellow"></button>
+            <button id="player4-blue" class="color-btn blue"></button>
+            <button id="player4-red" class="color-btn red"></button>
+          </div>
+          <div id="player4-score" class="score">10</div>
+        </div> -->
+      </div>
+    </div>
+    <img
+      id="close-rules"
+      class="rules-hidden"
+      src="./img/circle_close_delete_exit_remove_x_outline-512.webp"
+      alt=""
+    />
+    <div id="rules-container" class="rules-hidden">
+      <h3>super pim•pam•pet ©</h3>
+      <p>wettig gedeponeerd 094.088</p>
+      <br />
+      <h4>spelregels</h4>
+      <p>
+        Aantal spelers: 2-3 (plus een spelleider). <br /><br />
+        Er moet op worden gelet, dat alle spelers de letter, die door de
+        draaitafel wordt aangewezen, even gemakkelijk kunnen lezen, d.w.z. dat
+        zij allen ongeveer even dicht bij de draaitafel moeten zitten. <br />
+        <br />
+        De spelleider klikt op de kaart om een kaart te kiezen. <br />
+        Door te klikken wordt er een willekeurige vraag gekozen uit alle
+        mogelijke vragen.
+        <br />
+        Vervolgens klikt de spelleider het witte vlak waarin de letter zal
+        worden weergegeven. <br /><br />
+        Een speler kan scoren door als eerste een antwoord op de vraag te geven
+        met de desbetreffende letter. <br /><br />
+        Er zijn drie soorten vragen: geel, blauw en rood. <br />
+        Je kunt de soort herkennen aan de kleur van het rondje in de
+        rechterbovenhoek van de kaart. <br /><br />
+        De vragen hebben de volgende waardes: <br />
+        Geel: 5 punten <br />
+        Blauw: 10 punten <br />
+        Rood: 15 punten <br /><br />
+        De spelleider houdt de score bij door op de juiste kleur in het
+        scorebord van de speler die het juiste antwoord heeft gegeven, te
+        klikken. <br /><br />
+        Elke speler heeft het recht op twee keer de jokerkaart in te zetten.
+        Wanneer een speler de jokerkaart inzet en de vraag als eerste goed
+        beantwoord, dan heeft de speler de score voor deze vraag verdubbeld.
+        <br /><br />
+        Wanneer alle vragen zijn beantwoord, heeft de speler met de hoogste
+        score gewonnen!
+      </p>
+    </div>
+  </body>
+  <footer>
+    <div id="show_rules">?</div>
+    <div id="jumbo">
+      <a href="https://www.jumbo.eu/" target="_blank"
+        ><img id="logo" src="./img/jumbo-logo-new.svg" alt=""
+      /></a>
+    </div>
+  </footer>
+</html>
