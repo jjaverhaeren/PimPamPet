@@ -245,12 +245,6 @@ const questions = [
     color: "red",
   },
   {
-    text: "Een film.",
-    imgUrl: "img/kaarten/Film.jpeg",
-    asked: false,
-    color: "red",
-  },
-  {
     text: "Een land of werelddeel.",
     imgUrl: "img/kaarten/Land.jpeg",
     asked: false,
